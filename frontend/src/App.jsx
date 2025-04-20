@@ -14,7 +14,7 @@ import Contact from "./pages/Contact";
 import PageNotFound from "./pages/PageNotFound";
 import CourseDetails from './pages/CourseDetails';
 import Catalog from './pages/Catalog';
- 
+
 import Navbar from "./components/common/Navbar"
 
 import OpenRoute from "./components/core/Auth/OpenRoute"
@@ -38,7 +38,7 @@ import VideoDetails from './components/core/ViewCourse/VideoDetails';
 import { ACCOUNT_TYPE } from './utils/constants';
 
 import { HiArrowNarrowUp } from "react-icons/hi"
-
+import Chatbot from "./Chatboticon";
 
 function App() {
 
@@ -85,7 +85,7 @@ function App() {
         className={`bg-yellow-25 hover:bg-yellow-50 hover:scale-110 p-3 text-lg text-black rounded-2xl fixed right-3 z-10 duration-500 ease-in-out ${showArrow ? 'bottom-6' : '-bottom-24'} `} >
         <HiArrowNarrowUp />
       </button>
-
+      <Chatbot />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
@@ -133,6 +133,11 @@ function App() {
             </OpenRoute>
           }
         />
+
+
+
+
+
 
 
 
